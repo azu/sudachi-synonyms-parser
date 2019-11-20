@@ -4,8 +4,8 @@ Sudachi's [synonyms dictionary](https://github.com/WorksApplications/SudachiDict
 
 ## Features
 
-- CSV to JSON
-    - https://raw.githubusercontent.com/WorksApplications/SudachiDict/develop/src/main/text/synonyms.txt
+- Sudachi's [synonyms dictionary](https://github.com/WorksApplications/SudachiDict/blob/develop/docs/synonyms.md) to JSON
+    - Source: https://raw.githubusercontent.com/WorksApplications/SudachiDict/develop/src/main/text/synonyms.txt
 
 ## Install
 
@@ -44,7 +44,7 @@ export declare type SudachiSynonyms = {
      * グループ内における、同一語彙の管理番号です。省略することもできます。 "1"始まりで連番を付与します。
      * 「異表記や、外来語の表記ゆれ、原語綴り、対訳、略語、略称、別称 (通称・愛称、等) 、旧称、間違い」は、表記や語形が異なるだけで、同じ語彙と見なします。
      */
-    index: number | undefined;
+    vocabularyNumber: number | undefined;
     /**
      * 4 : 同一語彙内での語形種別
      * 同一語彙内 (3の番号が同じもの) における語形の関連性を示す情報です。省略することもできます。
@@ -112,20 +112,20 @@ import { parse } from "sudashi-synonyms-parser";
 const content = fs.readFileSync(path.join(__dirname, "fixtures/synonyms.txt"), "utf-8");
 const groups = parse(content);
 assert.deepStrictEqual(groups[45], {
-    "id": "000050",
+    "id": "000050", // 0
     "items": [{
-        "taigenYogen": "体言",
-        "expandControl": 0,
-        "index": 1,
-        "gokeiSyubetsu": "代表語",
-        "ryakusyou": "代表語形",
-        "hyoukiYure": "未定義",
-        "bunya": ["IT"],
-        "midashi": "アドミニストレーター"
+        "taigenYogen": "体言", // 1
+        "expandControl": 0, // 2
+        "vocabularyNumber": 1, // 3
+        "gokeiSyubetsu": "代表語", //4 
+        "ryakusyou": "代表語形", // 5
+        "hyoukiYure": "未定義", // 6
+        "bunya": ["IT"], // 7
+        "midashi": "アドミニストレーター" // 8
     }, {
         "taigenYogen": "体言",
         "expandControl": 0,
-        "index": 1,
+        "vocabularyNumber": 1,
         "gokeiSyubetsu": "代表語",
         "ryakusyou": "代表語形",
         "hyoukiYure": "アルファベット表記",
@@ -134,7 +134,7 @@ assert.deepStrictEqual(groups[45], {
     }, {
         "taigenYogen": "体言",
         "expandControl": 0,
-        "index": 1,
+        "vocabularyNumber": 1,
         "gokeiSyubetsu": "代表語",
         "ryakusyou": "代表語形",
         "hyoukiYure": "代表表記",
@@ -143,7 +143,7 @@ assert.deepStrictEqual(groups[45], {
     }, {
         "taigenYogen": "体言",
         "expandControl": 0,
-        "index": 1,
+        "vocabularyNumber": 1,
         "gokeiSyubetsu": "代表語",
         "ryakusyou": "略語・略称",
         "hyoukiYure": "未定義",

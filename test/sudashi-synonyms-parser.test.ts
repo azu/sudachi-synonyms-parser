@@ -12,7 +12,7 @@ describe("sudashi-synonyms-parser", function() {
             "items": [{
                 "taigenYogen": "体言",
                 "expandControl": 0,
-                "index": 1,
+                "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "代表語形",
                 "hyoukiYure": "未定義",
@@ -21,7 +21,7 @@ describe("sudashi-synonyms-parser", function() {
             }, {
                 "taigenYogen": "体言",
                 "expandControl": 0,
-                "index": 1,
+                "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "代表語形",
                 "hyoukiYure": "アルファベット表記",
@@ -30,7 +30,7 @@ describe("sudashi-synonyms-parser", function() {
             }, {
                 "taigenYogen": "体言",
                 "expandControl": 0,
-                "index": 1,
+                "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "代表語形",
                 "hyoukiYure": "代表表記",
@@ -39,7 +39,7 @@ describe("sudashi-synonyms-parser", function() {
             }, {
                 "taigenYogen": "体言",
                 "expandControl": 0,
-                "index": 1,
+                "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "略語・略称",
                 "hyoukiYure": "未定義",
@@ -55,7 +55,7 @@ describe("sudashi-synonyms-parser", function() {
             assert.strictEqual(typeof group.id, "string");
             assert.ok(Array.isArray(group.items));
             group.items.forEach(item => {
-                assert.strictEqual(typeof item.index, "number");
+                assert.strictEqual(typeof item.vocabularyNumber, "number");
                 assert.strictEqual(typeof item.taigenYogen, "string");
                 assert.strictEqual(typeof item.expandControl, "number");
                 assert.strictEqual(typeof item.gokeiSyubetsu, "string");

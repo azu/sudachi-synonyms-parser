@@ -29,7 +29,7 @@ export type SudachiSynonyms = {
      * グループ内における、同一語彙の管理番号です。省略することもできます。 "1"始まりで連番を付与します。
      * 「異表記や、外来語の表記ゆれ、原語綴り、対訳、略語、略称、別称 (通称・愛称、等) 、旧称、間違い」は、表記や語形が異なるだけで、同じ語彙と見なします。
      */
-    index: number | undefined;
+    vocabularyNumber: number | undefined;
     /**
      * 4 : 同一語彙内での語形種別
      * 同一語彙内 (3の番号が同じもの) における語形の関連性を示す情報です。省略することもできます。
@@ -100,7 +100,7 @@ export const parseSynonyms = (csv: string): SudachiSynonymsGroup => {
                 item[1] === "1" ? "体言" : item[1] === "2" ? "用言" : "未定義";
             const expandControl: SudachiSynonyms["expandControl"] =
                 item[2] === undefined ? 0 : (Number(item[2]) as SudachiSynonyms["expandControl"]);
-            const index: SudachiSynonyms["index"] = item[3] !== undefined ? Number(item[3]) : undefined;
+            const vocabularyNumber: SudachiSynonyms["vocabularyNumber"] = item[3] !== undefined ? Number(item[3]) : undefined;
             const gokeiSyubetsu: SudachiSynonyms["gokeiSyubetsu"] =
                 item[4] === "0"
                     ? "代表語"
@@ -142,7 +142,7 @@ export const parseSynonyms = (csv: string): SudachiSynonymsGroup => {
             return {
                 taigenYogen,
                 expandControl,
-                index,
+                vocabularyNumber,
                 gokeiSyubetsu,
                 ryakusyou,
                 hyoukiYure,
