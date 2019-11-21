@@ -70,7 +70,7 @@ export type SudachiSynonyms = {
  * @param text
  */
 export const parse = (text: string): SudachiSynonymsGroup[] => {
-    const synonymsList = text.trim().split(/(?:\r\n){2}/);
+    const synonymsList = text.trim().split(/(?:\r?\n){2}/);
     return synonymsList.map(synonyms => parseSynonyms(synonyms));
 };
 /**
