@@ -1,5 +1,5 @@
 {
-  "name": "sudashi-synonyms-parser",
+  "name": "sudachi-synonyms-parser",
   "version": "1.0.2",
   "description": "Sudachi's synonyms dictionary parser",
   "keywords": [
@@ -8,13 +8,13 @@
     "parser",
     "synonyms"
   ],
-  "homepage": "https://github.com/azu/sudashi-synonyms-parser",
+  "homepage": "https://github.com/azu/sudachi-synonyms-parser",
   "bugs": {
-    "url": "https://github.com/azu/sudashi-synonyms-parser/issues"
+    "url": "https://github.com/azu/sudachi-synonyms-parser/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/sudashi-synonyms-parser.git"
+    "url": "https://github.com/azu/sudachi-synonyms-parser.git"
   },
   "license": "MIT",
   "author": "azu",
@@ -23,8 +23,8 @@
     "lib/",
     "src/"
   ],
-  "main": "lib/sudashi-synonyms-parser.js",
-  "types": "lib/sudashi-synonyms-parser.d.ts",
+  "main": "lib/sudachi-synonyms-parser.js",
+  "types": "lib/sudachi-synonyms-parser.d.ts",
   "directories": {
     "lib": "lib",
     "test": "test"

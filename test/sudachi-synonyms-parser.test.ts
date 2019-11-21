@@ -1,9 +1,9 @@
 import * as fs from "fs";
 import * as path from "path";
-import { parse } from "../src/sudashi-synonyms-parser";
+import { parse } from "../src/sudachi-synonyms-parser";
 import * as assert from "assert";
 
-describe("sudashi-synonyms-parser", function() {
+describe("sudachi-synonyms-parser", function() {
     it("example", () => {
         const content = fs.readFileSync(path.join(__dirname, "fixtures/synonyms.txt"), "utf-8");
         const groups = parse(content);

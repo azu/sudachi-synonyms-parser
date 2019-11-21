@@ -1,4 +1,4 @@
-# sudashi-synonyms-parser
+# sudachi-synonyms-parser
 
 Sudachi's [synonyms dictionary](https://github.com/WorksApplications/SudachiDict/blob/develop/docs/synonyms.md) parser.
 
@@ -11,7 +11,7 @@ Sudachi's [synonyms dictionary](https://github.com/WorksApplications/SudachiDict
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install sudashi-synonyms-parser
+    npm install sudachi-synonyms-parser
 
 ## Usage
 
@@ -108,7 +108,7 @@ export declare const parseSynonyms: (csv: string) => SudachiSynonymsGroup;
 ## Example
 
 ```js
-import { parse } from "sudashi-synonyms-parser";
+import { parse } from "sudachi-synonyms-parser";
 const content = fs.readFileSync(path.join(__dirname, "fixtures/synonyms.txt"), "utf-8");
 const groups = parse(content);
 assert.deepStrictEqual(groups[45], {
@@ -157,7 +157,7 @@ assert.deepStrictEqual(groups[45], {
 
 ## Changelog
 
-See [Releases page](https://github.com/azu/sudashi-synonyms-parser/releases).
+See [Releases page](https://github.com/azu/sudachi-synonyms-parser/releases).
 
 ## Running tests
 
@@ -169,7 +169,7 @@ Install devDependencies and Run `npm test`:
 
 Pull requests and stars are always welcome.
 
-For bugs and feature requests, [please create an issue](https://github.com/azu/sudashi-synonyms-parser/issues).
+For bugs and feature requests, [please create an issue](https://github.com/azu/sudachi-synonyms-parser/issues).
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
