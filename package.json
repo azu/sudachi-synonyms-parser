@@ -1,6 +1,6 @@
 {
   "name": "sudachi-synonyms-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sudachi's synonyms dictionary parser",
   "keywords": [
     "csv",
