@@ -122,13 +122,13 @@ export const parseSynonyms = (csv: string): SudachiSynonymsGroup => {
                         ? "略語・略称"
                         : "未定義";
             const hyoukiYure: SudachiSynonyms["hyoukiYure"] =
-                item[6] === "1"
+                item[6] === "0"
                     ? "代表表記"
-                    : item[6] === "2"
+                    : item[6] === "1"
                     ? "アルファベット表記"
-                    : item[6] === "3"
+                    : item[6] === "2"
                         ? "異表記・表記ゆれ"
-                        : item[6] === "4"
+                        : item[6] === "3"
                             ? "間違い表記"
                             : "未定義";
             const bunya: SudachiSynonyms["bunya"] =

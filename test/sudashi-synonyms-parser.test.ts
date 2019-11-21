@@ -15,7 +15,7 @@ describe("sudashi-synonyms-parser", function() {
                 "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "代表語形",
-                "hyoukiYure": "未定義",
+                "hyoukiYure": "代表表記",
                 "bunya": ["IT"],
                 "midashi": "アドミニストレーター"
             }, {
@@ -24,7 +24,7 @@ describe("sudashi-synonyms-parser", function() {
                 "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "代表語形",
-                "hyoukiYure": "アルファベット表記",
+                "hyoukiYure": "異表記・表記ゆれ",
                 "bunya": ["IT"],
                 "midashi": "アドミニストレータ"
             }, {
@@ -33,7 +33,7 @@ describe("sudashi-synonyms-parser", function() {
                 "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "代表語形",
-                "hyoukiYure": "代表表記",
+                "hyoukiYure": "アルファベット表記",
                 "bunya": ["IT"],
                 "midashi": "administrator"
             }, {
@@ -42,7 +42,7 @@ describe("sudashi-synonyms-parser", function() {
                 "vocabularyNumber": 1,
                 "gokeiSyubetsu": "代表語",
                 "ryakusyou": "略語・略称",
-                "hyoukiYure": "未定義",
+                "hyoukiYure": "代表表記",
                 "bunya": ["IT"],
                 "midashi": "アドミニ"
             }]

@@ -112,44 +112,44 @@ import { parse } from "sudashi-synonyms-parser";
 const content = fs.readFileSync(path.join(__dirname, "fixtures/synonyms.txt"), "utf-8");
 const groups = parse(content);
 assert.deepStrictEqual(groups[45], {
-    "id": "000050", // 0
-    "items": [{
-        "taigenYogen": "体言", // 1
-        "expandControl": 0, // 2
-        "vocabularyNumber": 1, // 3
-        "gokeiSyubetsu": "代表語", //4 
-        "ryakusyou": "代表語形", // 5
-        "hyoukiYure": "未定義", // 6
-        "bunya": ["IT"], // 7
-        "midashi": "アドミニストレーター" // 8
-    }, {
-        "taigenYogen": "体言",
-        "expandControl": 0,
-        "vocabularyNumber": 1,
-        "gokeiSyubetsu": "代表語",
-        "ryakusyou": "代表語形",
-        "hyoukiYure": "アルファベット表記",
-        "bunya": ["IT"],
-        "midashi": "アドミニストレータ"
-    }, {
-        "taigenYogen": "体言",
-        "expandControl": 0,
-        "vocabularyNumber": 1,
-        "gokeiSyubetsu": "代表語",
-        "ryakusyou": "代表語形",
-        "hyoukiYure": "代表表記",
-        "bunya": ["IT"],
-        "midashi": "administrator"
-    }, {
-        "taigenYogen": "体言",
-        "expandControl": 0,
-        "vocabularyNumber": 1,
-        "gokeiSyubetsu": "代表語",
-        "ryakusyou": "略語・略称",
-        "hyoukiYure": "未定義",
-        "bunya": ["IT"],
-        "midashi": "アドミニ"
-    }]
+   "id": "000050",
+   "items": [{
+       "taigenYogen": "体言",
+       "expandControl": 0,
+       "vocabularyNumber": 1,
+       "gokeiSyubetsu": "代表語",
+       "ryakusyou": "代表語形",
+       "hyoukiYure": "代表表記",
+       "bunya": ["IT"],
+       "midashi": "アドミニストレーター"
+   }, {
+       "taigenYogen": "体言",
+       "expandControl": 0,
+       "vocabularyNumber": 1,
+       "gokeiSyubetsu": "代表語",
+       "ryakusyou": "代表語形",
+       "hyoukiYure": "異表記・表記ゆれ",
+       "bunya": ["IT"],
+       "midashi": "アドミニストレータ"
+   }, {
+       "taigenYogen": "体言",
+       "expandControl": 0,
+       "vocabularyNumber": 1,
+       "gokeiSyubetsu": "代表語",
+       "ryakusyou": "代表語形",
+       "hyoukiYure": "アルファベット表記",
+       "bunya": ["IT"],
+       "midashi": "administrator"
+   }, {
+       "taigenYogen": "体言",
+       "expandControl": 0,
+       "vocabularyNumber": 1,
+       "gokeiSyubetsu": "代表語",
+       "ryakusyou": "略語・略称",
+       "hyoukiYure": "代表表記",
+       "bunya": ["IT"],
+       "midashi": "アドミニ"
+   }]
 });
 
 
