@@ -152,12 +152,15 @@ assert.deepStrictEqual(groups[45], {
    }]
 });
 
-
 ```
 
 ## Changelog
 
 See [Releases page](https://github.com/azu/sudachi-synonyms-parser/releases).
+
+## Related
+
+- [azu/sudachi-synonyms-dictionary: sudashi's synonyms dictionary](https://github.com/azu/sudachi-synonyms-dictionary)
 
 ## Running tests
 
